@@ -17,10 +17,6 @@ h6 span {
   text-align: center;
   font-size: 16px;
 }
-#landing {
-  padding: 40px 10px;
-  max-width: 1200;
-}
 nav {
   width: 100%;
   height: auto;
@@ -36,9 +32,13 @@ nav {
 }
 .nav__logo--title {
   font-weight: 800;
-  height: 30px;
-  width: 80px;
-  margin-left: 12px 2;
+  display: flex;
+  align-items: center;
+
+  
+ 
+  
+  
 }
 .row {
   width: 100%;
@@ -58,14 +58,14 @@ nav {
   height: 60px;
   max-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0 auto;
+  justify-content: space-between;
+ 
+  
+  
 }
 .nav__links {
   justify-content: center;
-
+  align-items: center;
   list-style: none;
   display: flex;
   padding: 2 0;
@@ -79,18 +79,33 @@ nav {
   color: black;
   padding: 8px;
 }
-.btn {
-  background-color: rgb(68, 68, 209);
+.nav__link-btn {
+  justify-items: auto;
+  margin: 16px;
+  height: 60px;
   font-size: 16px;
-  border-radius: 16px;
-  border-width: 8px;
-  border-color: rgb(68, 68, 209);
+  background-color: transparent;
+  width: auto;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: all 300ms ease;
   cursor: pointer;
-  color: white;
-  transition: 2px;
+  padding: 16px 32px;
+  align-items: center;
 }
-/* header*/
 
+/* header*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 .header__container {
   padding: 40px 10px;
   width: 100%;
@@ -115,14 +130,55 @@ h1 {
   font-size: 25px;
 }
 
-
 .header__customers--title {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 16px;
   font-size: 15px;
-  text-align:start;
+  text-align: start;
+  color: #a0aec0;
+}
+.header__email {
+  width: 100%;
+  max-width: 448px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #243e63;
+}
+.header__email--input {
+  width: 100%;
+  border-radius: 500px;
+  border: 2px solid rgb(229, 231, 235);
+  padding: 20px, 192px, 20px, 32px;
+  color: rgb(36, 62, 99);
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: border 300ms;
+  
+
   
 }
+.header__email--btn {
+  z-index: 2;
+  margin: 8px;
+  height: calc(100%-16px);
+  border-radius: 500px;
+  width: 160px;
+  border: none;
+  background-color: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 300ms ease;
+  cursor: pointer;
+  
+}
+  
 .customer__img {
   width: auto;
   height: 27px;
@@ -131,5 +187,5 @@ h1 {
 .header__img--wrapper {
   width: calc(100%-40%);
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }

@@ -7,7 +7,7 @@
     <title>Mod 2 Final project</title>
   </head>
   <body>
-    <section id="landing">
+    <section>
       <nav>
         <div class="row__nav--row">
           <div class="nav__container">
@@ -23,7 +23,9 @@
               <li><a href="#pricing" class="nav__link">Pricing</a></li>
               <li><a href="#contact" class="nav__link">Contact Us</a></li>
               <li><a href="#login" class="nav__link">Login</a></li>
-              <li><button class="btn">Sign up</button></li>
+              <li>
+                <button href="sign up" class="nav__link-btn">Sign Up</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -38,10 +40,20 @@
               Our templates are easy to setup, understatnd and cutomize. Fully
               modular components with a variety of pages and components.
             </p>
-            <form action="mailto:your@email.com">Your E-mail address</form>
-            <button class="btn">Get Started</button>
+            <div class="header__email">
+              <input
+                type="text"
+                class="header__email--input"
+                placeholder="Your E-mail address"
+              />
+              <button class="header__email--button">Get Started</button>
+            </div>
+
             <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-            <img class="customer__img" src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" />
+            <img
+              class="customer__img"
+              src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+            />
           </div>
           <div>
             <figure class="header__img--wrapper"></figure>
