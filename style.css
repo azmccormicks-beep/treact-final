@@ -422,7 +422,7 @@ main features
   flex: 1;
 }
 .values__item {
-  margin: 16px 0px;
+  margin: 8px 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
