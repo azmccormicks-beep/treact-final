@@ -466,7 +466,7 @@ main features
 
 .row__narrow2 {
   width: 100%;
-  
+
   margin: auto 0;
   display: flex;
   flex-direction: column;
@@ -494,15 +494,15 @@ main features
 }
 .pricing__link,
 .pricing__links1,
-.pricing__links,.pricing__links2 {
+.pricing__links,
+.pricing__links2 {
   display: flex;
 
   align-items: center;
   flex-direction: row;
   width: 100%;
-  
+
   padding: 24px 56px;
-  
 }
 .pricing__link {
   font-size: 16px;
@@ -513,7 +513,7 @@ main features
   display: flex;
   flex-direction: column;
 }
-.pricing__links2{
+.pricing__links2 {
   padding: 8px;
 }
 
@@ -565,7 +565,7 @@ main features
 .pricing__links1 {
   background-color: rgb(102, 126, 234);
   border-radius: 8px;
-  height: 470px ;
+  height: 470px;
 }
 .buy__now--btn1 {
   margin: 16px 8px;
@@ -619,7 +619,8 @@ main features
   background: linear-gradient(
     115deg,
     rgb(245, 101, 101) 0%,
-    rgb(245, 178, 178) 100%);
+    rgb(245, 178, 178) 100%
+  );
   color: #fff;
   border-radius: 999px;
   transition: all 300ms ease;
@@ -629,40 +630,35 @@ main features
 }
 /* testimonials*/
 
-.image__container--testi{
+.image__container--testi {
   flex: 1;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   display: grid 30%;
-
 }
 
-.testimonials__header{
+.testimonials__header {
   font-size: 20px;
   margin: 24px 0px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-
 }
 .clients {
   margin: 24px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.para1
-{
+.para1 {
   font-size: 16px;
   margin: 24px 0px;
   max-width: 600px;
-  
 }
-.testi{
+.testi {
   width: 40%;
   height: auto;
   display: flex;
@@ -670,30 +666,27 @@ main features
   align-items: center;
   margin: 0 48px;
 }
-.star5{
+.star5 {
   color: goldenrod;
   margin: 16px 0px;
 }
-.amz__user--header{
+.amz__user--header {
   font-size: 20px;
   margin: 24px 0px;
   display: flex;
   display: flex;
   align-items: center;
 }
-.amz__para{
+.amz__para {
   font-size: 16px;
   margin: 24px 0px;
   max-width: 600px;
   display: flex;
-  
 }
-.amz__user{
+.amz__user {
   display: flex;
   align-items: center;
-  
 }
-
 
 .Charlotte {
   width: 100px;
@@ -705,13 +698,13 @@ main features
   font-weight: bold;
   margin: 8px 16px;
 }
-.Charlotte__role{
+.Charlotte__role {
   font-size: 16px;
   margin: 8px 16px;
   color: gray;
 }
 .back__btn,
-.next__btn{
+.next__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -723,12 +716,110 @@ main features
   height: 16px;
   padding: 16px;
   transition: all 300ms ease;
+  cursor: pointer;
 }
-.buttons
-{
-  display: flex; 
-  
+.buttons {
+  display: flex;
+
   gap: 32px;
   margin: auto 16px;
-  padding : 16px 96px;
+  padding: 16px 96px;
 }
+/* 
+Start box
+*/
+.start__container {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(100, 21, 255);
+  border-radius: 8px;
+  padding: 96px 48px;
+  margin: 80px 108px;
+}
+.start__title {
+  display: flex;
+  flex-direction: row;
+}
+.start__title--line {
+  font-size: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: whitesmoke;
+}
+.buy__now--btn11 {
+  margin: 16px 8px;
+  height: 60px;
+  font-size: 16px;
+  width: 150px;
+  border: 1px whitesmoke solid;
+  background-color: rgb(100, 21, 255);
+  color: whitesmoke;
+  border-radius: 999px;
+  transition: all 300ms ease;
+  cursor: pointer;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+footer
+*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container {
+  width: 90%;
+  height: auto;
+
+  display: flex;
+
+  background-color: rgb(100, 21, 255);
+  border-radius: 8px;
+  padding: 96px 48px;
+  margin: 80px 108px;
+}
+
+.footer__columns {
+  flex: 1;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.column__head {
+  display: flex;
+  justify-content: space-between;
+
+  color: whitesmoke;
+  margin: 24px 24px;
+}
+.footer__link--list {
+  color: whitesmoke;
+
+  flex-direction: column;
+}
+
+.links a {
+  display: flex;
+  color: whitesmoke;
+  margin: 4px 16px;
+  text-decoration: none;
+}
+.links a:hover{
+  color:black;
+  text-decoration: underline;
+  
+
+}
+.footer__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
