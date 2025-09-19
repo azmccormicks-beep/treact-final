@@ -771,28 +771,39 @@ footer
 */
 #footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.row__footer--row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__container {
   width: 90%;
-  height: auto;
-
   display: flex;
-
+  justify-content: center;
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
   padding: 96px 48px;
   margin: 80px 108px;
+  white-space: nowrap;
 }
 
 .footer__columns {
   flex: 1;
   width: 90%;
   display: flex;
+
+  align-items: center;
   flex-direction: column;
+  color: whitesmoke;
 }
 .column__head {
+  width: calc(100% / 5);
   display: flex;
   justify-content: space-between;
 
@@ -800,8 +811,10 @@ footer
   margin: 24px 24px;
 }
 .footer__link--list {
+  display: flex;
+  width: calc(100% / 5);
   color: whitesmoke;
-
+  align-items: center;
   flex-direction: column;
 }
 
@@ -810,16 +823,64 @@ footer
   color: whitesmoke;
   margin: 4px 16px;
   text-decoration: none;
+  display: inline-block;
 }
-.links a:hover{
-  color:black;
+.links a:hover {
+  color: white;
   text-decoration: underline;
-  
-
 }
-.footer__info{
+.footer__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.footer__divider {
+  width: 100%;
+  height: 2px;
+  margin: 64px 0;
+  color: rgb(116, 44, 225);
+}
+.footer__logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  margin: 0 300px 0 20px;
+}
+.footer__logo img {
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.team__name {
+  font-size: 16px;
+}
 
+.footer__bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copy__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+.team__name {
+  font-size: 16px;
+  color: #f7fafc;
+  margin-left: 8px;
+}
+
+.footer__copyright {
+  justify-content: space-between;
+  color: #cbd5e0;
+}
+.social__links {
+  cursor: pointer;
+  padding: 16px;
+  margin-left: 64px;
+  gap: 16px;
+}
