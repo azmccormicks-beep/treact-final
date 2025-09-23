@@ -968,5 +968,11 @@ footer
 .row__footer--row{
   flex-direction: column;
   margin-left: auto;
+  justify-content: center;
+}
+.copy__right{
+  flex-direction: column;
+  
+  
 }
 }
