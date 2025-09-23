@@ -919,6 +919,9 @@ footer
  .nav__links{
   
   flex-direction: column;
+  text-decoration:underline;
+  gap: 8px;
+  
   
  }
  .nav__link{
@@ -966,9 +969,13 @@ footer
   flex-direction: column;
  }
 .row__footer--row{
-  flex-direction: column;
-  margin-left: auto;
   justify-content: center;
+}
+.footer__columns{
+  width: auto;
+  text-align: center;
+  align-items: center; 
+  padding: 8px 0; 
 }
 .copy__right{
   flex-direction: column;
