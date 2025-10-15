@@ -172,22 +172,28 @@ h1 {
 }
 .header__email--input {
   width: 100%;
-  border-radius: 500px;
+  border-radius: 999px;
   border: 2px solid rgb(229, 231, 235);
   z-index: 1;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
-  
+  flex-direction: column;
   transition: border 300ms;
+  align-items: center;
+  margin: 16px 0;
+  padding: 16px 0;
+
+
 }
 .header__email--btn {
-  margin: 8px;
+  margin: 16px 0;
+  padding: 16px 0;
   height: calc(100%-16px);
-  border-radius: 500px;
+  border-radius: 999px;
   width: 160px;
   border: none;
   background-color: #6415ff;
@@ -197,6 +203,8 @@ h1 {
   transition: all 300ms ease;
   cursor: pointer;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .customer__img {
@@ -535,7 +543,7 @@ main features
   align-items: center;
   justify-content: space-between;
   max-width: 100%;
-
+  position: relative;
   padding: 24px 63px;
 }
 .pricing__link,
@@ -641,6 +649,8 @@ main features
   justify-content: center;
   align-items: center;
   color: rgb(102, 126, 234);
+  position: relative;
+  
 }
 .plan__stripe {
   border: none;
@@ -912,6 +922,8 @@ footer
   height: 48px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  text-align: center;
 }
 .team__name {
   font-size: 16px;
@@ -919,7 +931,7 @@ footer
 
 .footer__bottom {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -974,14 +986,84 @@ footer
  }
  .header__container{
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .customer__img{
+  max-width: 275px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+ }
+ .header__email{
+  
+  flex-direction: column;
+  align-items: stretch
+ }
+ .header__email--btn{
+  margin-top: 10px
+ }
+.header__email--input,
+.header__email--btn{
+  width: 100%;
+  
+
  }
  .row{
   flex-direction: column;
  }
  .feature__img--wrapper{
-  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+ .features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+ }
+ .feature__row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+ .features__text{
+  text-align: center;
+  
  }
  .row__quality{
+  flex-direction: column-reverse;
+  text-align: center
+ }
+ .row__quality{
+  flex-direction: column;
+  text-align: center
+ }
+ .values__row{
+  flex-direction: column;
+  text-align: center;
+ }.values__img{
+  flex-direction: column-reverse;
+ }
+ .section__title2{
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+ }
+ .values__item{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ }
+ .nav__link-btn{
+  width: auto;
+  height: auto;
+  align-items: center;;
   flex-direction: column;
  }
  .steps__img{
@@ -989,9 +1071,27 @@ footer
  }
  .row__narrow2{
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
  }
  .pricing__links{
   flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+ }
+ .pricing__links2{
+  align-items: center;
+  margin-top: 48px;
+ }
+ .pricing__links1{
+  padding : 24px 16px;
+ }
+ .buy__now--btn11{
+  display: block;
+  position: relative;
+  top: -30px;
  }
  .image__container--testi{
   flex-direction: column;
@@ -1005,18 +1105,44 @@ footer
  .start__title--line{
   flex-direction: column;
  }
+ .footer{
+  padding: 80px 32px;
+ }
 .row__footer--row{
   justify-content: center;
 }
 .footer__columns{
-  width: auto;
+  
   text-align: center;
   align-items: center; 
   padding: 8px 0; 
+  
+}
+.column__head{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+.team__name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0 0 16px 0;
+ 
+
+}
+.footer__logo{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .copy__right{
   flex-direction: column;
-  
-  
+  text-align: center;
+}
+.footer__bottom{
+  align-items: center;
 }
 }
