@@ -32,6 +32,14 @@ ul {
 li {
   list-style-type: none;
   padding-left: 16px;
+  
+}
+li:hover{
+  text-decoration: underline 4px; 
+  gap: 4px;
+  color: #6415ff;
+  cursor: pointer;
+
 }
 .logo {
   width: 80px;
@@ -129,7 +137,7 @@ h4{
   margin: 0 auto;
 }
 .header__container {
-  padding: 40px 40px;
+  padding: 40px 0px;
   width: 100%;
 }
 
@@ -146,11 +154,18 @@ h1 {
   margin-bottom: 20px;
   font-size: 40px;
   justify-content: start;
+  ;
 }
 .header__description--para {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 25px;
+  margin: 32px 0px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  
 }
 
 .header__customers--title {
@@ -163,37 +178,40 @@ h1 {
 .header__email {
   width: 100%;
   max-width: 448px;
+  height: 68px;
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #243e63;
+  gap: 8px;
+  z-index: 1;
+  margin-top: 20px;
   
 }
 .header__email--input {
   width: 100%;
-  border-radius: 999px;
+  border-radius: 500px;
+  height: calc(100% - 16px);
   border: 2px solid rgb(229, 231, 235);
   z-index: 1;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  padding: 20px 192px 20px 32px;
   top: 0;
-  bottom: 0;
-  flex-direction: column;
-  transition: border 300ms;
-  align-items: center;
-  margin: 16px 0;
-  padding: 16px 0;
-
+  bottom: 0;  
+  transition: border-color 300ms ease;
+  
+  
 
 }
 .header__email--btn {
-  margin: 16px 0;
-  padding: 16px 0;
-  height: calc(100%-16px);
-  border-radius: 999px;
+  margin: 8px;
+  margin-bottom: 24px;
+  padding: 12px 24px;
+  height: calc(100% -16px);
+  border-radius: 30px 30px 30px 30px;
   width: 160px;
   border: none;
   background-color: #6415ff;
@@ -203,8 +221,7 @@ h1 {
   transition: all 300ms ease;
   cursor: pointer;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .customer__img {
@@ -994,20 +1011,38 @@ footer
   text-align: center;
   display: flex;
   flex-direction: column;
-  
+ }
+ h1{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+ }
+ .header__description--para{
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  overflow: visible;
  }
  .header__email{
-  
   flex-direction: column;
-  align-items: stretch
+  align-items: center;
  }
+
+.header__email--input{
+  position: static;
+  padding: 8px 0px;
+  padding-left: 32px;
+  line-height: 1.5;
+  margin-top: 16px;
+
+}
  .header__email--btn{
-  margin-top: 10px
- }
-.header__email--input,
-.header__email--btn{
   width: 100%;
-  
+  padding: 8px 0;
+  margin: 16px 0;
+  margin-bottom: 0px;
+  flex-direction: column;
+  ;
 
  }
  .row{
