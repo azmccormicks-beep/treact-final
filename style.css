@@ -612,12 +612,15 @@ steps__img {
   color: black;
   margin-top: 8px;
   padding: 4px 0px;
+  align-items: center;
+  text-align: center;
 }
 .plan__feature2 {
   font-size: 16px;
   color: white;
   margin-top: 8px;
   padding: 4px 0px;
+  text-align: center;
 }
 .buy__now--btn {
   margin: 16px 8px;
