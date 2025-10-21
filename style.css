@@ -126,6 +126,7 @@ h4 {
   width: 100%;
   max-width: 1200px;
   margin-left: 50px;
+  
 }
 .header__container {
   padding: 40px 0px;
@@ -284,6 +285,8 @@ main features
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  
 }
 .feature__img--wrapper {
   display: flex;
@@ -311,8 +314,9 @@ main features
   gap: 40px;
   margin-top: 150px;
 }
-.quality__header {
+.quality__header{
   display: inline;
+  
 }
 
 .header__description--quality {
@@ -565,7 +569,7 @@ main features
 .pricing__links1 {
   background-color: rgb(102, 126, 234);
   border-radius: 8px;
-
+  
   width: auto;
   border: 1px solid rgb(150, 151, 155);
 }
@@ -804,7 +808,7 @@ main features
   transition: all 300ms ease;
   cursor: pointer;
 }
-.buttons {
+.buttons1, .buttons {
   display: flex;
 
   gap: 32px;
@@ -819,15 +823,15 @@ Start box
   align-items: center;
 }
 .start__container {
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
   padding: 96px 48px;
-  margin: 80px 60px;
+  margin: 80px 108px;
 }
 .start__title {
   display: flex;
@@ -835,10 +839,14 @@ Start box
 }
 .start__title--line {
   font-size: 32px;
-  display: flex;
-  justify-content: flex-start;
+  height: auto;
+  width: 500px;
+  justify-content: center;
   align-items: center;
+  display: flex;
+  text-align: center;
   color: whitesmoke;
+  flex-direction: column;
 }
 .buy__now--btn11 {
   margin: 16px 8px;
@@ -856,6 +864,11 @@ Start box
   justify-content: center;
   align-items: center;
 }
+.amz__para,
+.para1  {
+    flex-direction: column;
+    margin: 32px 0px;
+  }
 /*
 footer
 */
@@ -1016,7 +1029,7 @@ footer
     justify-content: center;
   }
   .header__description--para {
-  }
+    }
   .header__email {
     flex-direction: column;
     align-items: center;
@@ -1045,12 +1058,14 @@ footer
   .feature__img--wrapper {
     justify-content: center;
     margin-bottom: 24px;
+    
   }
   .feature__img {
     display: block;
     margin: 0 auto;
+    
   }
-  .features {
+  .features{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1058,7 +1073,7 @@ footer
   }
   .feature {
     width: 100%;
-
+   
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1073,64 +1088,65 @@ footer
     flex-direction: column-reverse;
     text-align: center;
   }
-
+  
   .header__description--quality,
   .row__quality,
-  .quality__title,
-   {
+  .quality__title   {
     width: 100%;
     display: flex;
     margin-top: 20px;
     align-items: center;
-
+    
     justify-content: center;
   }
-  .section__title {
-    text-align: center;
+  .section__title{
+    text-align: center
+    
   }
-  .header__container {
-    flex-direction: column-reverse;
+  .row__quality{
+  flex-direction: column-reverse;
   }
-
+  
   .steps__description,
   .step__title,
   .steps__lists,
   .step,
-  .step__para,
-  .values__item,
-  .value__name
-   {
+  .step__para{
     width: 100%;
     align-items: center;
     justify-content: center;
     display: block;
   }
-  .step__number
-   {
+  .step__number{
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
     font-size: 32px;
   }
-  .steps__img,
-  .steps__img--wrapper {
-    width: 100%;
-    height: auto;
+  .steps__img, .steps__img--wrapper{
+   
+    flex-direction: column-reverse;
     
+    text-align: center;
   }
-
-  .value__img {
-    
+  
+  .values__img   {
+    flex-direction: column;
   }
   .section__title2,
-  .section__title {
+  .section__title{
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
   .values__item {
     text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .values__row {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -1151,34 +1167,88 @@ footer
   .pricing__links {
     flex-direction: column;
     justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  .pricing__links2 {
-    align-items: center;
-    margin-top: 48px;
-  }
+    width: 350px;
+   
+      }
+  .pricing__link,
+  .pricing__links2,
   .pricing__links1 {
-    padding: 24px 16px;
+    align-items: center;
+    margin-top: 36px;
+    margin-right: 0px;
+    width: 500px;
+   
   }
+  .buy__now--btn, 
+  .buy__now--btn1,
+  .buy__now--btn2 {
+    width: 80%;
+    height: auto;
+    padding: 12px 0;
+  } 
+  
   .buy__now--btn11 {
     display: block;
     position: relative;
     top: -30px;
   }
+  .para1{
+    margin: 32px 0px;
+  }
+  .amz__user--header,
+  .amz__user{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .amz__para,
+  .para1  {
+    flex-direction: column;
+    margin: auto 0px;
+  }
   .image__container--testi {
     flex-direction: column;
   }
+  
+  
+  #start {
+    flex-direction: column;
+    text-align: center;
+  }
   .start__container {
-    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    margin-right: 96px;
+     
   }
   .start__title {
     flex-direction: column;
+    
+    
   }
   .start__title--line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+  .buttons{
     flex-direction: column;
   }
+  .buy__now--btn2,
+  .buy__now--btn11 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    }
+    .buy__now--btn11{
+      margin: 16px 8px;
+      height: 50px
+    }
+    
+  
   .footer {
     padding: 80px 32px;
   }
@@ -1186,9 +1256,7 @@ footer
     justify-content: center;
   }
   .footer__columns {
-    text-align: center;
-    align-items: center;
-    padding: 8px 0;
+    justify-content: center;
   }
   .column__head {
     flex-direction: column;
@@ -1202,16 +1270,23 @@ footer
 
     margin: 0 0 16px 0;
   }
-  .footer__logo {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  .footer__logo, .footer__logo img {
+   display: flex;
+   justify-content: center;
+    margin: 0 0 16px 0;
+
   }
   .copy__right {
     flex-direction: column;
     text-align: center;
+    margin-left: 0px;
   }
   .footer__bottom {
-    align-items: center;
+   
+    flex-direction: column;
+  }
+  .social__links {
+    margin-left: 0px;
+    
   }
 }
