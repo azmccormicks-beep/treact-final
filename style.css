@@ -126,7 +126,6 @@ h4 {
   width: 100%;
   max-width: 1200px;
   margin-left: 50px;
-  
 }
 .header__container {
   padding: 40px 0px;
@@ -282,8 +281,9 @@ main features
 }
 .feature__row {
   display: flex;
-
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .feature__img--wrapper {
   display: flex;
@@ -311,17 +311,29 @@ main features
   gap: 40px;
   margin-top: 150px;
 }
+.quality__header {
+  display: inline;
+}
 
 .header__description--quality {
   width: 50%;
   display: flex;
   margin: auto 0;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-
+  gap: 0.5 rem;
   padding: 16px 32px;
   flex: 1;
+}
+.quality__para {
+  font-size: 16px;
+  margin-top: 24px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .quality__img--wrapper {
   border-radius: 4px;
@@ -347,7 +359,7 @@ main features
   justify-content: space-between;
   gap: 2rem;
 }
-steps__img {
+.steps__img {
   margin: auto 0;
 }
 .steps__description {
@@ -531,8 +543,6 @@ steps__img {
 .pricing__links2,
 .pricing__mid {
   display: flex;
-  flex-direction: relative;
-  margin-left: 8px;
   margin-right: 8px;
   align-items: stretch;
   justify-content: center;
@@ -555,7 +565,7 @@ steps__img {
 .pricing__links1 {
   background-color: rgb(102, 126, 234);
   border-radius: 8px;
-  
+
   width: auto;
   border: 1px solid rgb(150, 151, 155);
 }
@@ -985,7 +995,9 @@ footer
     height: auto;
   }
   .header__img {
-    height: 600px;
+    height: 300px;
+    width: auto;
+    margin-top: 100px;
   }
   .header__container {
     flex-direction: column;
@@ -1004,10 +1016,6 @@ footer
     justify-content: center;
   }
   .header__description--para {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    overflow: visible;
   }
   .header__email {
     flex-direction: column;
@@ -1020,6 +1028,7 @@ footer
     padding-left: 32px;
     line-height: 1.5;
     margin-top: 16px;
+    width: 100%;
   }
   .header__email--btn {
     width: 100%;
@@ -1030,11 +1039,16 @@ footer
   }
   .row {
     flex-direction: column;
-  }
-  .feature__img--wrapper {
-    flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .feature__img--wrapper {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .feature__img {
+    display: block;
+    margin: 0 auto;
   }
   .features {
     display: flex;
@@ -1042,11 +1056,15 @@ footer
     align-items: center;
     text-align: center;
   }
-  .feature__row {
-    display: flex;
+  .feature {
+    width: 100%;
+
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    text-align: center;
+  }
+  .feature__row {
+    flex-wrap: wrap;
   }
   .features__text {
     text-align: center;
@@ -1055,18 +1073,58 @@ footer
     flex-direction: column-reverse;
     text-align: center;
   }
-  .row__quality {
-    flex-direction: column;
+
+  .header__description--quality,
+  .row__quality,
+  .quality__title,
+   {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .section__title {
     text-align: center;
   }
-  .values__row {
-    flex-direction: column;
-    text-align: center;
-  }
-  .values__img {
+  .header__container {
     flex-direction: column-reverse;
   }
-  .section__title2 {
+
+  .steps__description,
+  .step__title,
+  .steps__lists,
+  .step,
+  .step__para,
+  .values__item,
+  .value__name
+   {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  .step__number
+   {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+  .steps__img,
+  .steps__img--wrapper {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .value__img {
+    
+  }
+  .section__title2,
+  .section__title {
     flex-direction: column;
     text-align: center;
     align-items: center;
