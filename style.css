@@ -52,9 +52,9 @@ li#header:hover {
 .row {
   width: 100%;
   max-width: 1200px;
-
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
 }
 .purple {
   color: #6415ff;
@@ -125,12 +125,15 @@ h4 {
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
   
 }
 .header__container {
   padding: 40px 0px;
   width: 100%;
+  
 }
 
 .header__description {
@@ -254,6 +257,7 @@ main features
 .section__para {
   font-size: 16px;
   margin-bottom: 24px;
+  margin-top: 24px;
 }
 .nav__container {
   padding: 80px 0;
@@ -268,7 +272,7 @@ main features
 .features {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 36px;
+  margin-top: 42px;
   margin-left: 16px;
 
   align-items: center;
@@ -276,7 +280,7 @@ main features
 .feature {
   width: calc(100% / 3);
   justify-content: space-between;
-  padding: 24px, 24px;
+  
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -362,6 +366,7 @@ main features
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  margin-right: 25px;
 }
 .steps__img {
   margin: auto 0;
@@ -391,9 +396,9 @@ main features
 .section__title {
   font-size: 48px;
   margin: 24px 0px;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
+  text-align: center;
+  
+  
 }
 .step {
   display: flex;
@@ -541,12 +546,12 @@ main features
   margin-bottom: 16px;
   border-radius: 8px;
 }
-.pricing__link,
+
 .pricing__links1,
 .pricing__links,
-.pricing__links2,
-.pricing__mid {
+.pricing__links2{
   display: flex;
+  flex-direction: row;
   margin-right: 8px;
   align-items: stretch;
   justify-content: center;
@@ -554,16 +559,20 @@ main features
   height: auto;
   position: relative;
   width: 200px;
-  border-radius: 8px;
+  border-radius: 16px;
+  width: 300px;
+  
 }
 .pricing__link {
   font-size: 16px;
   text-decoration-line: none;
-
+  width: 300px;
   color: black;
   padding: 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
 }
 
 .pricing__links1 {
@@ -700,7 +709,8 @@ main features
   width: 100%;
   margin-bottom: 16px;
 }
-.buy__now--btn2 {
+.buy__now--btn2,
+.buy__now--btn21 {
   margin: 16px 8px;
   height: 60px;
   font-size: 16px;
@@ -721,12 +731,16 @@ main features
 /* testimonials*/
 
 .image__container--testi {
-  flex: 1;
+  
   display: flex;
   width: 100%;
-  justify-content: center;
+ 
   align-items: center;
-  display: grid 30%;
+  
+}
+.testi__header{
+  width: calc(100% - 40%);
+
 }
 
 .testimonials__header {
@@ -745,37 +759,39 @@ main features
 }
 .para1 {
   font-size: 16px;
-  margin: 24px 0px;
+  margin: 50px 16px;
   max-width: 600px;
 }
 .testi {
   width: 40%;
+
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 48px;
+  margin-right: 48px;
 }
 .star5 {
   color: goldenrod;
-  margin: 16px 0px;
+  margin: 50px 0px;
 }
 .amz__user--header {
   font-size: 20px;
-  margin: 24px 0px;
+  margin: 50px 0px;
   display: flex;
   display: flex;
   align-items: center;
 }
 .amz__para {
   font-size: 16px;
-  margin: 24px 0px;
+  margin: 50px 0px;
   max-width: 600px;
   display: flex;
 }
 .amz__user {
   display: flex;
   align-items: center;
+  margin: 100px 0;
 }
 
 .Charlotte {
@@ -808,12 +824,22 @@ main features
   transition: all 300ms ease;
   cursor: pointer;
 }
-.buttons1, .buttons {
+.buttons1,
+.buttons {
   display: flex;
 
   gap: 32px;
   margin: auto 16px;
   padding: 16px 96px;
+}
+.divider__btn{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-right-width: 1px;
+  width: 0.5px;
+  background-color: #edf2f7;
+  height: 20px;
+
 }
 /* 
 Start box
@@ -848,7 +874,8 @@ Start box
   color: whitesmoke;
   flex-direction: column;
 }
-.buy__now--btn11 {
+.buy__now--btn11
+ {
   margin: 16px 8px;
   height: 60px;
   font-size: 16px;
@@ -1164,21 +1191,21 @@ footer
     align-items: center;
     margin-bottom: 24px;
   }
-  .pricing__links {
+  .pricing__links,
+  .pricing__links1,
+  .pricing__links2,
+  .pricing__link 
+ {
     flex-direction: column;
     justify-content: center;
-    width: 350px;
+    width: 300px;
+    margin-bottom: 48px;
    
-      }
-  .pricing__link,
-  .pricing__links2,
-  .pricing__links1 {
-    align-items: center;
-    margin-top: 36px;
-    margin-right: 0px;
-    width: 500px;
-   
-  }
+    }
+    .price__disc{
+      margin-bottom: 48px;
+    }
+  
   .buy__now--btn, 
   .buy__now--btn1,
   .buy__now--btn2 {
@@ -1236,7 +1263,7 @@ footer
   .buttons{
     flex-direction: column;
   }
-  .buy__now--btn2,
+  .buy__now--btn21,
   .buy__now--btn11 {
     justify-content: center;
     align-items: center;
