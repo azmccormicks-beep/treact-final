@@ -23,7 +23,7 @@ h6 span {
   color: #243e63;
   line-height: 1.25;
   text-align: center;
-  font-size: 36px;
+  
 }
 nav {
   height: 100px;
@@ -560,26 +560,29 @@ main features
   margin-bottom: 16px;
   border-radius: 8px;
 }
+.pricing__link--all{
+  
+}
 
 .pricing__links1,
 .pricing__links,
 .pricing__links2 {
   display: flex;
   flex-direction: row;
-  margin-right: 8px;
+ 
+  margin-left: 16px;
   align-items: stretch;
   justify-content: center;
   max-width: 100%;
   height: auto;
   position: relative;
-  width: 200px;
-  border-radius: 16px;
-  width: 300px;
+  
 }
 .pricing__link {
   font-size: 16px;
   text-decoration-line: none;
   width: 300px;
+  
   color: black;
   padding: 8px;
   display: flex;
@@ -601,10 +604,11 @@ main features
 
 .plan__body {
   font-size: 16px;
+  font-weight: bold;
   text-decoration-line: none;
 
   color: white;
-  padding: 8px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -617,7 +621,7 @@ main features
   justify-content: center;
 }
 .price__body {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: bold;
   margin: 16px 0px;
   display: flex;
@@ -634,6 +638,7 @@ main features
   justify-content: center;
   margin: 16px 0px;
   font: bold;
+  font-size: 16px;
 }
 .divider {
   border: none;
