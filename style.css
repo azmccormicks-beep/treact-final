@@ -34,7 +34,7 @@ nav {
 }
 ul {
   display: flex;
-  justify-content: center;
+  
 }
 li {
   list-style-type: none;
@@ -566,7 +566,8 @@ main features
 
 .pricing__links1,
 .pricing__links,
-.pricing__links2 {
+.pricing__links2,
+.pricing__link--all {
   display: flex;
   flex-direction: row;
  
@@ -603,12 +604,9 @@ main features
 }
 
 .plan__body {
-  font-size: 16px;
   font-weight: bold;
   text-decoration-line: none;
-
   color: white;
-  padding: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -616,22 +614,34 @@ main features
 .price {
   font-size: 32px;
   font-weight: bold;
-  margin: 16px 0px;
+  margin: 8px 0px;
   display: flex;
   justify-content: center;
 }
 .price__body {
-  font-size: 16px;
+  font-size: 32px;
   font-weight: bold;
-  margin: 16px 0px;
+  margin: 8px 0px;
   display: flex;
   justify-content: center;
   color: white;
+}
+.plan__body1{
+  color: whitesmoke;
+  justify-content: center;
+  display: flex;
+  margin: 16px 0;
+  font-size: 16px;
 }
 .monthly__price {
   font-size: 16px;
 
   margin: 8px 0px;
+}
+.plan__price1{
+  font-size: 16px;
+  margin: 8px 0;
+  color: whitesmoke;
 }
 .price__class {
   display: flex;
@@ -643,7 +653,7 @@ main features
 .divider {
   border: none;
   height: 2px;
-  background-color: gray;
+  background-color: whitesmoke;
   width: 100%;
   margin-bottom: 16px;
 }
@@ -661,6 +671,7 @@ main features
   margin-top: 8px;
   padding: 4px 0px;
   text-align: center;
+  align-items: center;
 }
 .buy__now--btn {
   margin: 16px 8px;
@@ -708,11 +719,20 @@ main features
   width: 100%;
   margin-bottom: 16px;
 }
+.divider7{
+  height: 4px;
+  border-radius: 8px;
+  color: grey;
+  width: 100%;
+  margin-bottom: 16px;
+  
+}
 .divider2 {
   height: 1px;
   color: grey;
   width: 100%;
   margin-bottom: 16px;
+  
 }
 .divider3 {
   border: none;
